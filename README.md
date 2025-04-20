@@ -1,7 +1,3 @@
-Here's a **professionally polished version** of your README file with better structure, enhanced clarity, formatting improvements, and developer-friendly tone:
-
----
-
 # 🚀 3-Tier .NET & MongoDB Web Application
 
 A modular **3-tier architecture** web application built using **ASP.NET Core (.NET 8.0)** for the backend and **MongoDB 7.0** as the NoSQL database. This architecture separates concerns into:
