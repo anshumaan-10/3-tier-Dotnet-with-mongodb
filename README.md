@@ -1,4 +1,6 @@
 # 🚀 3-Tier .NET & MongoDB Web Application
+![.NET](https://img.shields.io/badge/.NET-8.0-purple?logo=dotnet)
+![MongoDB](https://img.shields.io/badge/MongoDB-7.0-green?logo=mongodb)
 
 A modular **3-tier architecture** web application built using **ASP.NET Core (.NET 8.0)** for the backend and **MongoDB 7.0** as the NoSQL database. This architecture separates concerns into:
 - **Presentation Layer**: UI for user interactions
