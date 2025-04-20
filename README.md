@@ -144,4 +144,3 @@ See the [LICENSE](LICENSE) file for details.
 
 ---
 
-If you’d like to add badges, contribution guidelines, Docker support, or CI workflows, let me know and I’ll help you integrate those as well!
