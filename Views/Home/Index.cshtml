@@ -1,13 +1,28 @@
 @{
     Layout = "~/Views/Shared/_HomeLayout.cshtml";
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Anshumaan Singh | DevSecOps Portfolio";
 }
 
 <div class="container text-center mt-5">
-    <h1 class="display-4">Welcome to Anshumaan Singh Page</h1>
-    <p class="lead">Application Security and DevSecOps Expert.</p>
+    <h1 class="display-3 fw-bold">👋 Welcome to Anshumaan Singh's Space</h1>
+    <p class="fs-4 text-muted">Application Security | DevSecOps Engineer | Cloud Native Enthusiast</p>
     <hr class="my-4">
-    <p>Explore our courses and resources designed to enhance your DevOps skills.</p>
-    <a class="btn btn-primary btn-lg" href="@Url.Action("Index", "Product")" role="button">Go to Product List</a>
-</div>
 
+    <p class="fs-5">
+        This project demonstrates a complete <strong>3-Tier Architecture</strong> using <strong>.NET Core</strong> and <strong>MongoDB</strong> — deployed and secured using modern DevSecOps practices.
+    </p>
+
+    <div class="my-4">
+        <a class="btn btn-outline-primary btn-lg me-2" href="@Url.Action("Index", "Product")" role="button">
+            🧾 View Product List
+        </a>
+        <a class="btn btn-outline-success btn-lg" href="https://github.com/anshumaan-10/3-tier-Dotnet-with-mongodb" target="_blank">
+            🔗 View on GitHub
+        </a>
+    </div>
+
+    <div class="mt-5">
+        <p class="text-muted">Want to collaborate or learn more?</p>
+        <a href="https://linkedin.com/in/anshumaan-singh-6b51b5239" class="btn btn-dark btn-sm" target="_blank">🔗 Connect on LinkedIn</a>
+    </div>
+</div>
