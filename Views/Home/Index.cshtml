@@ -1,28 +1,103 @@
-@{
-    Layout = "~/Views/Shared/_HomeLayout.cshtml";
-    ViewData["Title"] = "Anshumaan Singh | DevSecOps Portfolio";
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 
-<div class="container text-center mt-5">
-    <h1 class="display-3 fw-bold">👋 Welcome to Anshumaan Singh's Space</h1>
-    <p class="fs-4 text-muted">Application Security | DevSecOps Engineer | Cloud Native Enthusiast</p>
-    <hr class="my-4">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
 
-    <p class="fs-5">
-        This project demonstrates a complete <strong>3-Tier Architecture</strong> using <strong>.NET Core</strong> and <strong>MongoDB</strong> — deployed and secured using modern DevSecOps practices.
-    </p>
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.7rem;
+        }
 
-    <div class="my-4">
-        <a class="btn btn-outline-primary btn-lg me-2" href="@Url.Action("Index", "Product")" role="button">
-            🧾 View Product List
-        </a>
-        <a class="btn btn-outline-success btn-lg" href="https://github.com/anshumaan-10/3-tier-Dotnet-with-mongodb" target="_blank">
-            🔗 View on GitHub
-        </a>
-    </div>
+        .nav-link {
+            font-size: 1.1rem;
+        }
 
-    <div class="mt-5">
-        <p class="text-muted">Want to collaborate or learn more?</p>
-        <a href="https://linkedin.com/in/anshumaan-singh-6b51b5239" class="btn btn-dark btn-sm" target="_blank">🔗 Connect on LinkedIn</a>
-    </div>
-</div>
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #fff;
+        }
+
+        .content {
+            flex: 1;
+            padding-top: 2rem;
+        }
+
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Anshumaan Singh</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">🏠 Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/anshumaan-singh-6b51b5239" target="_blank">💼 LinkedIn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/anshumaan-10" target="_blank">💻 GitHub</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:anshumaansingh10jan@gmail.com">✉️ Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://medium.com/@anshumaansingh10jan" target="_blank">📢 Medium</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content container">
+        @RenderBody()
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2024 - Anshumaan Singh | DevSecOps & AppSec | <a href="/Home/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js"></script>
+</body>
+</html>
