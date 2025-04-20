@@ -1,4 +1,4 @@
-# 🚀 3-Tier .NET & MongoDB Web Application
+# 3-Tier .NET & MongoDB Web Application
 ![.NET](https://img.shields.io/badge/.NET-8.0-purple?logo=dotnet)
 ![MongoDB](https://img.shields.io/badge/MongoDB-7.0-green?logo=mongodb)
 
